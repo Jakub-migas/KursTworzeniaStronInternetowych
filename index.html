@@ -10,12 +10,13 @@
         <link rel="stylesheet" herf="https://fonts.googleapis.com/css?family=Montserrat">
         <link rel="stylesheet" href="css/footer.css">
         <link rel="stylesheet" href="css/about.css">
+        <link rel="stylesheet" href="css/common.css">
     
     </head>
     <body>
         <heder>
             <a href="#top">
-                <img id="logo" src="images/logo/logo.png" alt="logo"
+                <img id="logo" src="images/logo/logo.png" alt="logo">
             </a>
             <nav>
                 <ul class="menu">
@@ -40,6 +41,51 @@
      <main>
          <section id="about">
              <div id="imageContainer">
+                <head>
+                    <title>Flex intro</title>
+                    <style>
+                        .box {
+                            justify-content: space-evenly;
+                            width: 100px;
+                            height: 100px;
+                            border: 2px solid black;
+                            margin-inline-end: 10px;
+                        }
+            
+                        #box1 {
+                            background-color: skyblue;
+                        }
+                        #box2 {
+                            background-color: skyblue;
+                        }
+                        #box3 {
+                            background-color: skyblue;
+                        }
+            
+                        body {
+                            background-color: white;
+                            display: flex;
+                            justify-content: center;
+                        }
+            
+                        #container {
+                            background-color: white;
+                            display: flex;
+                            justify-content: space-evenly;
+                            height: 300px;
+                            width: 300px;
+                            align-items: center;
+                            flex-wrap: wrap;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <div id="container">
+                        <div id="box1" class="box"></div>
+                        <div id="box2" class="box"></div>
+                        <div id="box3" class="box"></div>
+                    </div>
+                </body>
                 <img id="aboutImage" src="images/about/about.jpg" alt="about">
                 <div id="aboutTextContainer">
                     <h2>O nas</h2>
@@ -51,12 +97,17 @@
                         Działamy na rynku od roku <b>1999</b>, a wieęc już ponad 20 lat!
                         Nie wachaj się ani sekundy i wciśnij przycisk, aby się zapisać.
                     </p>
+                    <div class="btnGroup">
+                        <button class="btn btnPrimary">Zapisz się</button>
+                        <button class="btn btnSecondary">Dowiedz się więcej</button>
+                    </div>
                 </div>
              </div>
          </section>
      </main>   
         <footer>
-            <h4> stworzone przez Jakub Migas
+
+            <h4> stworzone przez Jakub Migas </h4> 
         </footer>
     </body>
 </html>
